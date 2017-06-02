@@ -26,8 +26,8 @@ The goals / steps of this project are the following:
 My reflection consist of below steps:
 
 ***Current pipeline***
-*Based on number of iterations, my current pipeline is as follows:
-*convert color image into hls with convert_hls() to filter out white and yellow channel
+###Based on number of iterations, my current pipeline is as follows:
+###convert color image into hls with convert_hls() to filter out white and yellow channel
 *Keep only yellow and white pixels, black out all other pixels: select_white_yellow()
 T*his removes any unwanted edges from shadows, cracks in the road, etc.
 *Convert image into grayscale: grayscale()
