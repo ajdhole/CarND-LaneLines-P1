@@ -28,7 +28,7 @@ My reflection consist of below steps:
 ***Current pipeline***
 * Based on number of iterations, my current pipeline is as follows:
 
-* convert color image into hls with convert_hls() to filter out white and yellow channel
+* convert color image into hls with convert_hls() to filter out white and yellow channel. Ref-http://www.rapidtables.com/web/color/RGB_Color.htm
 
 * Keep only yellow and white pixels, black out all other pixels: select_white_yellow()
 
@@ -46,7 +46,9 @@ My reflection consist of below steps:
 
 * Filter Hough lines by slope and endpoint location, and separate them into candidate right/left lane line segments. 
 
-* Then run linear regression on candidate right/left lane line segment endpoints, to create right/left lane line equations. 
+* Then run linear regression on candidate right/left lane line segment endpoints, to create right/left lane line equations.
+
+* Extrapolate line with polyfit function. Ref- https://peteris.rocks/blog/extrapolate-lines-with-numpy-polyfit/
 
 * From these equations, draw right/left lane lines on the image: draw_lines()
 
